@@ -1,5 +1,5 @@
 # Constants to avoid hard coding
-TEAM_NAME = ""
+TEAM_NAME = "Keren"
 
 MAGIC_COOKIE = 0xabcddcba   # Identifier to validate the packet
 
