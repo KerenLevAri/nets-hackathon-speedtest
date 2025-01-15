@@ -48,7 +48,7 @@ def offer_broadcast(udp_port, tcp_port):
         broadcast_offer_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)  # Enable broadcasting
         while True:
             # Send the offer packet to all clients on the network
-            broadcast_offer_socket.sendto(offer_packet, ('<broadcast>', BROADCAST_PORT))  # Broadcasting on port 13117
+            broadcast_offer_socket.sendto(offer_packet, ('172.18.255.255', BROADCAST_PORT))  # Broadcasting on port 13117
             time.sleep(1)  # Sleep for 1 second before broadcasting again
 
 
